@@ -8,6 +8,7 @@
 <p  align="center">
 <img  src="https://github.com/mekristaps/MNav/blob/master/preview.gif?raw=true"  width="450"  title="MNav preview gif">
 </p>
+<b><a href="https://mekristaps.github.io/MNav/"  target="_blank">Demo</a></b>
 
 <h2  align="center">How to use?</h2>
 
