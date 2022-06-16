@@ -6,7 +6,7 @@
 <p>MNav hides navigation items that doesn't fit in navigation container under more dropdown.</p>
 
 <p  align="center">
-<img  src="https://github.com/MeKristaps/MNav/blob/main/preview.gif?raw=true"  width="450"  title="MNav preview gif">
+<img  src="https://github.com/mekristaps/MNav/blob/master/preview.gif?raw=true"  width="450"  title="MNav preview gif">
 </p>
 
 <h2  align="center">How to use?</h2>
