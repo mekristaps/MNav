@@ -1,0 +1,179 @@
+.navigation {
+    background-color: #F8FAFD;
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 50%;
+    display: flex;
+    align-self: center;
+    box-shadow: 0 0 transparent,0 0 transparent,0px 3px 3px rgba(64,70,104,0.1);
+    box-shadow: 0 0 transparent,0 0 transparent,0 0 transparent,0 0 transparent,0px 3px 3px rgba(64,70,104,0.1);
+
+    &-list {
+        display: flex;
+        align-items: baseline;
+        flex: 1 0 auto;
+        list-style: none;
+        position: relative;
+        padding: 0;
+
+        li {
+            margin: 0 10px;
+        }
+    }
+
+    &-item {
+        margin-right: 30px;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: .4px;
+        color: rgba(93,101,152,1);
+        position: relative;
+        z-index: 99;
+
+        &:after {
+            position: absolute;
+            content: "";
+            --tw-bg-opacity: 1;
+            border-bottom: 3px solid rgba(85,33,181,1);
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.25s;
+            z-index: 100;
+        }
+
+        &:hover {
+            color: #41546C;
+
+            &:after {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+
+            a {
+                cursor: pointer;
+                color: #41546C;
+            }
+
+            svg {
+                cursor: pointer;
+                transform: rotate(180deg);
+            }
+        }
+
+        svg {
+            align-self: center;
+            width: 18px;
+            height: 18px;
+            transition: all 0.25s;
+
+        }
+
+        a {
+            transition: all 0.25s;
+            text-decoration: none;
+            --tw-text-opacity: 1;
+            color: #768CA9;
+        }
+    }
+
+    &-more {
+        $navigation-more: &;
+        position: relative;
+        display: none;
+        
+        &:hover {
+            cursor: pointer;
+
+            #{$navigation-more}-wrapper {
+                opacity: 1;
+                display: flex;
+                
+            }
+
+            #{$navigation-more}-inner {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+
+            > a {
+                color: #41546C;
+            }
+
+            svg {
+                color: #41546C;
+                cursor: pointer;
+                transform: rotate(180deg);
+            }
+        }
+        
+        > a {
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: .4px;
+            color: #768CA9;
+            text-decoration: none;
+        }
+
+        svg {
+            color: #768CA9;
+            position: absolute;
+            top: 4px;
+            transition: all 0.5s;
+        }
+
+        &-wrapper {
+            position: absolute;
+            right: 0;
+            padding-top: 20px;
+            opacity: 0;
+            display: none;
+            transition: all 0.5s;
+        }
+
+        &-inner {
+            background: #F8FAFD;
+            box-shadow: 0px 0px 8px 1px rgb(64,70,104,0.1);
+            opacity: 0;
+            border-radius: 4px;
+            padding: 20px 30px;
+            overflow-y: scroll;
+            transform-origin: top;
+            transform: scaleY(0);
+            transition: all 0.5s;
+        }
+
+        &-list {
+            padding: 0;
+            list-style: none;
+            white-space: nowrap;
+
+            li {
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: .4px;
+                color: #768CA9;
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                
+                &:hover {
+
+                    a {
+                        color: #41546C; 
+                    }
+                }
+            }
+
+            a {
+                color: #768CA9;
+                text-decoration: none;
+                transition: all 0.5s;
+            }
+        }
+    }
+}

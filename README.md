@@ -12,8 +12,8 @@
 
 <h2  align="center">How to use?</h2>
 
-<b>Before you start, make sure you have jQuery in your project.</b>
-<p>Load css & js files from <code>/demo/assets</code> into your project</p>
+<b>*This project has JQuery as dependency.</b>
+<p>Load css & js files from <code>/dist/assets</code> into your project</p>
 
 ```html
 <!DOCTYPE  html>
@@ -30,7 +30,7 @@
 ```html
 <div  class="navigation"  data-mnav>
 	<ul  class="navigation-list"  data-mnav-list>
-		<li  class="navigation-item"  data-nav-item>
+		<li  class="navigation-item"  data-mnav-item>
 			<a  href="#">Navigation Item</a>
 		</li>
 		<li  class="navigation-more"  data-mnav-dropdown>
@@ -52,7 +52,7 @@
 // HTML data attributes
 data-mnav // Main navigation container. Must have - display: flex;
 data-mnav-list // Main navigation ul element. Must have - display: flex; flex: 1  0  auto;
-data-nav-item // Main navigation item
+data-mnav-item // Main navigation item
 data-mnav-dropdown // More dropdown element container
 data-mnav-dropdown-list // More dropdown list item container
 ```
@@ -61,7 +61,7 @@ data-mnav-dropdown-list // More dropdown list item container
 <p>There are additional css classes added to items:</p>
 
 ```js
-data-nav-item // if item move back from dropdown list, it will have "navigation-item" class added to them
+data-mnav-item // if item move back from dropdown list, it will have "navigation-item" class added to them
 data-mnav-dropdown-list // items added to list will have "navigation-childrens-item" class added to them.
 ```
 <br />

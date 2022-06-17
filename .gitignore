@@ -1,0 +1,8 @@
+# System files & folders
+/.idea
+
+# Local folders
+/dist/assets
+/dist/assets/js
+/dist/assets/css
+/node_modules

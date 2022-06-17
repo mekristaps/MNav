@@ -1,0 +1,27 @@
+{
+    "compilerOptions": { 
+      "target": "es5",
+      "lib": [
+        "es2015",
+        "dom"
+      ],
+      "resolveJsonModule": true,
+      "esModuleInterop": true, 
+      "baseUrl": "./",
+      "paths": {
+        "$root/*": ["resources/assets/js/*"],
+        "$controllers/*": ["resources/assets/js/controllers/*"],
+        "$helpers/*": ["resources/assets/js/helpers/*"],
+        "$modules/*": ["resources/assets/js/modules/*"],
+        "$utilities/*": ["resources/assets/js/utilities/*"],
+        "$arbory/*": ["vendor/arbory/arbory/resources/assets/js/*"],
+        "#root/*": ["resources/assets/sass/*"],
+        "#_includes/*": ["resources/assets/sass/_includes/*"],
+        "#_components/*": ["resources/assets/sass/_components/*"]
+      }
+    },
+    "exclude": [
+      "vendor",
+      "node_modules"
+    ]
+  }

@@ -1,0 +1,64 @@
+{
+    "name": "MNav",
+    "title": "MNav",
+    "version": "1.0.1",
+    "main": "dist/assets/js/mnav.js",
+    "description": "Collapsible navigation that hides menu items if they don't fit in navigation container.",
+    "homepage": "https://mekristaps.github.io/MNav/",
+    "author": {
+        "name": "Kristaps Melnis",
+        "url": "https://instagram.com/mekristaps"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mekristaps/MNav.git"
+    },
+    "keywords": [
+        "mnav",
+        "more navigation",
+        "dropdown",
+        "priority plus",
+        "priority+",
+        "responsive",
+        "navigation",
+        "nav"
+    ],
+    "license": {
+        "type": "MIT",
+        "url": "https://github.com/mekristaps/MNav/blob/master/LICENSE"
+    },
+    "bugs": {
+        "url": "https://github.com/mekristaps/MNav/issues"
+    },
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@types/jquery": "^3.5.14",
+        "clean-webpack-plugin": "^4.0.0",
+        "copy-webpack-plugin": "^11.0.0",
+        "cross-env": "^7.0.3",
+        "expose-loader": "^4.0.0",
+        "intersection-observer": "^0.12.2",
+        "laravel-mix": "^6.0.49",
+        "postcss-inline-base64": "^7.2.2",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.52.3",
+        "sass-loader": "^13.0.0",
+        "stylelint": "^14.9.1",
+        "stylelint-config-recommended-scss": "^6.0.0",
+        "stylelint-scss": "^4.2.0",
+        "stylelint-webpack-plugin": "^3.3.0",
+        "ts-loader": "^9.3.0",
+        "typescript": "^4.7.3"
+    },
+    "dependencies": {
+        "jquery": "^3.6.0"
+    }
+}
