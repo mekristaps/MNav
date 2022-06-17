@@ -45,6 +45,8 @@
 	</ul>
 </div>
 ```
+
+<p>Make sure to install node modules using <code>npm i</code> and compile code using <code>npm run prod</code></p>
 <h3>Data attribute definitions</h3>
 <p>These data attributes must be present in html structure for this to work.</p>
 
